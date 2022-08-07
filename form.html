@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Feedback</title>
+    <link rel="icon" type="image/x-icon" href="graphics_files/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS Font/Style-->
+    <!-- BootStrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/page_layout.css">
+    
+    <!-- Javascript Files -->
+    <!-- BootStrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/currYear.js" defer></script>
+    <script src="js/form.js" defer></script>
+    <script src="js/form_error.js" defer></script>
+    <script src="js/backToTop.js" defer></script>
+    <script src="js/darkmode.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand text-white" id="nav-brand" href="index.html">Eden Tan<span class="grn-text">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa fa-bars bar-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse me-4" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white custom-hover" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white custom-hover" href="before_poly.html">Before Poly</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white custom-hover" href="poly_life.html">Poly Life</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white custom-hover" href="future.html">My Future</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="form.html">Feedback</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ed3n_tan/" target="_blank" class="fa fa-instagram"></a>
+                        <a href="https://twitter.com/Edentan2003" target="_blank" class="fa fa-twitter"></a>
+                    </li>
+                    <li>
+                        <button type="button" id="darkModeButton" class="btn" aria-label="toggle dark mode">Dark Mode</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <button type="button" class="btn btn-info btn-floating btn-sm" id="btn-back-to-top">
+        <i class="fa fa-arrow-up text-white"></i>
+    </button>
+
+    <div class="container">
+        <div class="main-header row align-items-center py-5 slide">
+            <div class="col-lg-6 col-md-12">
+                <h1 class="main-header-h1">Feedback<span class="grn-text">.</span></h1>
+                <h3 class="lead">IS THERE SOMETHING YOU WANT TO ASK ME?</h3>
+            </div>
+        </div>
+
+        <p id="errorMsg"></p>
+        <form action="#" method="post" class="slide">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group py-2">
+                        <label for="full_name" class="text-white">Name(Required):</label>
+                        <input type="text" name="fullname" id="full_name" placeholder="John Doe"
+                            class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="form-group py-2">
+                        <label for="date_of_birth" class="text-white">Date of Birth:</label>
+                        <input type="date" name="dob" id="date_of_birth" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group py-2">
+                        <label for="telephone_num" class="text-white">Phone Number:</label>
+                        <input type="text" name="phoneNumber" id="telephone_num" pattern="\d{4} \d{4}"
+                            placeholder="9999 9999" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="form-group py-2">
+                        <label for="email_address" class="text-white">Email(Required):</label>
+                        <input type="email" name="email" id="email_address" placeholder="johndoe@gmail.com"
+                            class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group py-2">
+                        <label for="country_select" class="text-white">Country:</label>
+                        <input type="text" name="country" id="country_select" value="Singapore" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="form-group py-2">
+                        <label for="gender" class="text-white">Gender</label>
+                        <select class="form-control" id="gender">
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group py-2">
+                <label for="rating_input" class="text-white">Rate my website:
+                    <span id="show_rating">(5)</span>
+                </label>
+                <input type="range" name="rating" id="rating_input" min="1" max="10" class="form-control-range">
+                <p id="message"></p>
+            </div>
+
+            <div class="form-group py-2">
+                <label for="message_input" class="text-white">Your Message:</label>
+                <textarea name="message" class="form-control" id="message_input" cols="30" rows="10"
+                    placeholder="Hi, ..."></textarea>
+            </div>
+
+            <div class="text-center my-5">
+                <button type="submit" class="btn btn-primary btn-md text-white submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="align-items-center footer">
+        <p class="m-0 text-center">EdenTan. &copy; <span id="currYear"></span></p>
+    </footer>
+</body>
+
+</html>
