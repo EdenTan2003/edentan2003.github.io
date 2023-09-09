@@ -89,11 +89,14 @@
 
         <p id="errorMsg"></p>
         <form action="https://formsubmit.co/d794ce737664f49016a05e63993c6885" method="POST" class="slide">
+
+            <input type="hidden" name="" _next" value="https://edentan2003.github.io/formSuccess.html" />
+
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group py-2">
                         <label for="full_name" class="text-white">Name(Required):</label>
-                        <input type="text" name="fullname" id="full_name" placeholder="John Doe" class="form-control"
+                        <input type="text" name="name" id="full_name" placeholder="John Doe" class="form-control"
                             required>
                     </div>
                 </div>
@@ -110,8 +113,8 @@
                 <div class="col-sm-6">
                     <div class="form-group py-2">
                         <label for="telephone_num" class="text-white">Phone Number:</label>
-                        <input type="text" name="phoneNumber" id="telephone_num" pattern="\d{4} \d{4}"
-                            placeholder="9999 9999" class="form-control">
+                        <input type="text" name="phone" id="telephone_num" pattern="\d{4} \d{4}" placeholder="9999 9999"
+                            class="form-control" required>
                     </div>
                 </div>
 
@@ -154,7 +157,7 @@
 
             <div class="form-group py-2">
                 <label for="message_input" class="text-white">Your Message(Required):</label>
-                <textarea name="message" class="form-control" id="message_input" cols="30" rows="10"
+                <textarea name="comments,&nbsp;questions" class="form-control" id="message_input" cols="30" rows="10"
                     placeholder="Hi, ..." required></textarea>
             </div>
 
