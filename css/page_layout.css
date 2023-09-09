@@ -1,9 +1,9 @@
 :root {
     --clr-light: #9cd3d8;
-    --clr-dark:  #243240;
+    --clr-dark: #243240;
     --clr-primary: #2e2f5b;
     --clr-secondary: #0b698b;
-    --clr-accent:  #0396a6;
+    --clr-accent: #0396a6;
     --clr-btn: black;
     --clr-btn-text: white;
 
@@ -12,10 +12,10 @@
 
 .darkmode {
     --clr-light: #9cd3d8;
-    --clr-dark:  #243240;
+    --clr-dark: #243240;
     --clr-primary: white;
-    --clr-secondary:  rgb(34, 34, 34);
-    --clr-accent:  #1e3852;
+    --clr-secondary: rgb(34, 34, 34);
+    --clr-accent: #1e3852;
     --clr-btn: white;
     --clr-btn-text: black;
 
@@ -31,7 +31,7 @@ body {
 }
 
 /*Global Styling*/
-h1,h2,h3,h4,h5,h6,p,td{
+h1, h2, h3, h4, h5, h6, p, td {
     color: var(--clr-primary);
 }
 
@@ -64,7 +64,7 @@ p {
     background: var(--clr-secondary);
     box-shadow: 0px 0px 10px gray;
     padding: 1rem 0;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
 .bar-icon {
@@ -77,7 +77,7 @@ p {
 
 a.custom-hover:hover {
     color: #1c54a4 !important;
-} 
+}
 
 #darkModeButton {
     background-color: var(--clr-btn);
@@ -99,7 +99,7 @@ a.custom-hover:hover {
 .fa-twitter {
     background: #55ACEE;
     color: white;
-    padding: 2px;
+    padding: 2.5px;
     border-radius: 5px;
     margin-right: 10px;
 }
@@ -107,9 +107,17 @@ a.custom-hover:hover {
 .fa-instagram {
     background: #ff40af;
     color: white;
-    padding: 2px 3px 2px 3px;
+    padding: 2.5px;
     border-radius: 5px;
-    margin-right: 15px;
+    margin-right: 10px;
+}
+
+.fa-github {
+    background: #2b3765;
+    color: white;
+    padding: 2.5px;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
 /*Main Header Styling*/
@@ -119,9 +127,10 @@ a.custom-hover:hover {
 
 /* Slider */
 .slideanim {
-    visibility:hidden;
+    visibility: hidden;
 
 }
+
 .slide {
     animation-name: slide;
     /* -webkit-animation-name: slide; */
@@ -134,7 +143,8 @@ a.custom-hover:hover {
     0% {
         opacity: 0;
         transform: translateY(70%);
-    } 
+    }
+
     100% {
         opacity: 1;
         transform: translateY(0%);
@@ -148,19 +158,19 @@ a.custom-hover:hover {
 }
 
 /*Image Styling*/
-img{
+img {
     /* Transition for hovering */
     transition: 0.5s ease-in-out;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
     width: 100%;
 }
 
-img:hover{
+img:hover {
     transform: scale(1.02);
 }
 
 /*Every img have a box-shadow except those in header*/
-.main-header img{
+.main-header img {
     box-shadow: none;
     display: block;
 }
@@ -212,7 +222,7 @@ img:hover{
 footer.footer {
     font-weight: 700;
     /* Gradient Background */
-    background: linear-gradient(90deg, lightseagreen 0%,  darkgreen 100%);
+    background: linear-gradient(90deg, lightseagreen 0%, darkgreen 100%);
 }
 
 /* In Mobile View */
@@ -228,7 +238,7 @@ footer.footer {
 
     .submit-btn {
         width: 100%;
-    }    
+    }
 }
 
 /* In Tablet view */
@@ -239,7 +249,7 @@ footer.footer {
 
     .submit-btn {
         width: 300px;
-    }    
+    }
 }
 
 /* Add margin-top to darkmode button when hamburger icon appears */
@@ -257,5 +267,5 @@ footer.footer {
 
     .submit-btn {
         width: 300px;
-    }    
+    }
 }
