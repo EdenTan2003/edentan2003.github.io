@@ -11,6 +11,8 @@ function removeMsg() {
 let user_rating = document.querySelector("#rating_input");
 let show_rating = document.querySelector("#show_rating");
 
+setMsg("Thank You for the feedback :)");
+
 user_rating.addEventListener("input", function (i) {
   show_rating.innerHTML = `(${i.target.value})`;
   if (i.target.value >= 7) {
@@ -25,24 +27,3 @@ user_rating.addEventListener("input", function (i) {
 user_rating.addEventListener("focus", () => {
   removeMsg();
 });
-
-// function sendEmail() {
-//   var params = {
-//     name: document.getElementById("full_name").value,
-//     email: document.getElementById("email_address").value,
-//     message: document.getElementById("message_input").value,
-//   };
-
-//   const serviceID = "service_spktoqp";
-//   const templateID = "template_pwbwybp";
-
-//   emailjs
-//     .send(serviceID, templateID, params)
-//     .then((res) => {
-//       document.getElementById("full_name").value = "";
-//       document.getElementById("email_address").value = "";
-//       document.getElementById("message_input").value = "";
-//       alert("Message Sent Successfully");
-//     })
-//     .catch((err) => console.log(err));
-// }
