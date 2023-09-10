@@ -24,6 +24,6 @@ user_rating.addEventListener("input", function (i) {
   }
 });
 
-user_rating.addEventListener("focus", () => {
-  removeMsg();
-});
+// user_rating.addEventListener("focus", () => {
+//   removeMsg();
+// });
